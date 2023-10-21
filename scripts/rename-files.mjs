@@ -11,7 +11,7 @@ export const renameFiles = async () => {
       let newName;
 
       if (file === "README.md") {
-        newName = "intro.md";
+        newName = "index.md";
       } else {
         const baseName = path.basename(file, ".md");
         newName = `nip-${baseName}.md`;
