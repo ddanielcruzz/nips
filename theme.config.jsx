@@ -23,4 +23,7 @@ export default {
   feedback: {
     content: null,
   },
+  footer: {
+    text: null,
+  },
 };
