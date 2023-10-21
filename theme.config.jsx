@@ -1,11 +1,22 @@
+import { Anchor } from "./components/anchor";
+
 export default {
   useNextSeoProps() {
     return {
       titleTemplate: "Nostr | %s",
+      openGraph: {
+        type: "website",
+        url: "https://nostr-nips.com",
+        title: "Nostr | NIPs",
+        description: "Documentation site for NIPs",
+      },
     };
   },
   project: {
     link: "https://github.com/ddanielcruzz/nips",
+  },
+  components: {
+    a: Anchor,
   },
   logo: <span>Nostr NIPs</span>,
   sidebar: {
